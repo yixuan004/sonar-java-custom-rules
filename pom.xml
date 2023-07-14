@@ -8,9 +8,10 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>sonar-plugin</packaging>
 
+	<!-- 这里尝试修改成sonarqube7.7的版本 -->
 	<properties>
-		<sonar.version>6.2.1</sonar.version>
-		<java.plugin.version>4.6.0.8784</java.plugin.version>
+		<sonar.version>7.7</sonar.version>
+		<java.plugin.version>5.12.1.17771</java.plugin.version>
 		<sslr.version>1.21</sslr.version>
 	</properties>
 
@@ -128,6 +129,12 @@
 			<artifactId>logback-classic</artifactId>
 			<version>0.9.30</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.javaparser</groupId>
+			<artifactId>javaparser-symbol-solver-core</artifactId>
+			<version>3.25.4</version>
 		</dependency>
 	</dependencies>
 

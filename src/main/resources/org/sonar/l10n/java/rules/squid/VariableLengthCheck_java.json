@@ -1,0 +1,13 @@
+{
+  "title": "The length of Member Variable should < 20",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "bug",
+    "pitfall"
+  ],
+  "defaultSeverity": "CRITICAL"
+}

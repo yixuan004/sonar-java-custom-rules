@@ -1,0 +1,23 @@
+<p>VariableLengthCheck Check
+    The length of Member Variable should < 20
+</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    public int abcdefghijklmnopqrst;  // Noncompliant
+    public String abcdefghijklmnopqrs;
+
+
+    public void tsrqponmlkjihgfedcba(String a) {
+        System.out.println("Hello, World");
+    }
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+    public int abc;
+    public String abcdefghijklmnopqrs;
+
+
+    public void tsrqponmlkjihgfedcba(String a) {
+        System.out.println("Hello, World");
+    }
+</pre>

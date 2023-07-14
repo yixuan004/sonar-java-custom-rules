@@ -20,6 +20,7 @@
 package org.sonar.java.rule;
 
 import com.google.common.collect.ImmutableList;
+import org.sonar.java.rule.checks.lyxrules.*;
 import org.sonar.java.rule.checks.namerules.*;
 import org.sonar.plugins.java.api.JavaCheck;
 
@@ -43,6 +44,7 @@ public final class RulesList {
             .add(AbstractClassNameCheck.class)
             .add(ExceptionClassNameCheck.class)
             .add(ArrayNameCheck.class)
+            .add(VariableLengthCheck.class)
       .build();
   }
 
