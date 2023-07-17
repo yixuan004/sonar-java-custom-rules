@@ -1,0 +1,13 @@
+{
+  "title": "以Request字段为结尾的类不能同时使用@test1和@test2两个注解",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "bug",
+    "pitfall"
+  ],
+  "defaultSeverity": "CRITICAL"
+}

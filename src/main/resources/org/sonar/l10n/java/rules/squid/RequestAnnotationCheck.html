@@ -1,0 +1,39 @@
+<p>RequestAnnotation Check</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    @ApiModelProperty(value = "xxxxxx", example = "xxxxxx")
+    @test1
+    private String corpId;
+
+    @ApiModelProperty(value = "xxxxxx", example = "xxxxxx")
+    @test2
+    private String taskId;
+
+    @ApiModelProperty(value = "xxxxxx", example = "xxxxxx")
+    @test1
+    @test2
+    private String version;  // Noncompliant
+
+    @ApiModelProperty(value = "xxxxxx", example = "xxxxxx")
+    @test2
+    @test1
+    private String test;  // Noncompliant
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+    @ApiModelProperty(value = "xxxxxx", example = "xxxxxx")
+    @test1
+    private String corpId;
+
+    @ApiModelProperty(value = "xxxxxx", example = "xxxxxx")
+    @test2
+    private String taskId;
+
+    @ApiModelProperty(value = "xxxxxx", example = "xxxxxx")
+    @test1
+    private String version;  // Noncompliant
+
+    @ApiModelProperty(value = "xxxxxx", example = "xxxxxx")
+    @test2
+    private String test;  // Noncompliant
+</pre>

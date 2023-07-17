@@ -19,6 +19,7 @@
  */
 package org.sonar.java.rule;
 
+import org.sonar.java.rule.checks.lyxrules.RequestAnnotationCheck;
 import org.sonar.java.rule.checks.lyxrules.VariableLengthCheck;
 import org.sonar.java.rule.checks.namerules.*;
 import org.sonar.plugins.java.api.CheckRegistrar;
@@ -57,7 +58,8 @@ public class MyJavaFileCheckRegistrar implements CheckRegistrar {
             AbstractClassNameCheck.class,
             ExceptionClassNameCheck.class,
             ArrayNameCheck.class,
-            VariableLengthCheck.class
+            VariableLengthCheck.class,
+            RequestAnnotationCheck.class
     };
   }
 

@@ -45,6 +45,7 @@ public final class RulesList {
             .add(ExceptionClassNameCheck.class)
             .add(ArrayNameCheck.class)
             .add(VariableLengthCheck.class)
+            .add(RequestAnnotationCheck.class)
       .build();
   }
 
