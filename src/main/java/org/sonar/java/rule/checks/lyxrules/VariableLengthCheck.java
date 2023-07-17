@@ -37,12 +37,12 @@ public class VariableLengthCheck extends BaseTreeVisitor implements JavaFileScan
         LOGGER.info(">>>>variableName>>>>" + variableName);
         LOGGER.info(">>>>variableNameLength>>>>" + variableNameLength);
 
-        if(!tree.symbol().isFinal()){
-            if (variableNameLength >= 20) {
-                LOGGER.info(">>该变量命名不符合规范>>" + tree.simpleName().name());
-                context.reportIssue(this, tree,"The length of Member Variable should < 20");
-            }
+
+        if (variableNameLength >= 20) {
+            LOGGER.info(">>该变量命名不符合规范>>" + tree.simpleName().name());
+            context.reportIssue(this, tree,"The length of Member Variable should < 20");
         }
+
 
         // 递归
         super.visitVariable(tree);  // 这里是一个递归的执行逻辑，会去找到一段代码里的所有Variable，本身就是一棵树应该
